@@ -30,7 +30,8 @@
     "drupal/drupal-driver": "^2.1.0",
     "symfony/browser-kit": "^3.4|~4.4|^6",
     "symfony/dependency-injection": "~3.0|~4.4|^6",
-    "symfony/translation": "^3.4|~4.4|^6"
+    "symfony/translation": "^3.4|~4.4|^6",
+    "cweagans/composer-patches": "^1.7"
   },
   "require-dev": {
     "composer/installers": "^1.2|^2",
@@ -60,6 +61,11 @@
     }
   },
   "extra": {
+    "patches": {
+        "friends-of-behat/mink-extension": {
+            "setClient error": "https://github.com/FriendsOfBehat/MinkExtension/files/9480850/16.txt"
+        }
+    },
     "branch-alias": {
       "dev-master": "4.3.x-dev"
     },
@@ -78,7 +84,8 @@
     "allow-plugins": {
       "composer/installers": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "drupal/core-composer-scaffold": true
+      "drupal/core-composer-scaffold": true,
+      "cweagans/composer-patches": true
     }
   }
 }
