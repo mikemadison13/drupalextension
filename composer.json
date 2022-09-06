@@ -61,11 +61,6 @@
     }
   },
   "extra": {
-    "patches": {
-        "friends-of-behat/mink-extension": {
-            "setClient error (#16)": "https://github.com/FriendsOfBehat/MinkExtension/files/9480850/16.txt"
-        }
-    },
     "branch-alias": {
       "dev-master": "5.0.x-dev"
     },
